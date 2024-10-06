@@ -1,0 +1,11 @@
+../LWIP/target/ethernetif.c:57:7:sys_now	8	static
+../LWIP/target/ethernetif.c:72:14:low_level_init	16	static
+../LWIP/target/ethernetif.c:139:14:low_level_output	32	static
+../LWIP/target/ethernetif.c:192:22:low_level_input	40	static
+../LWIP/target/ethernetif.c:238:6:ethernetif_input_do	24	static
+../LWIP/target/ethernetif.c:266:7:ethernetif_init	24	static
+../LWIP/target/ethernetif.c:295:6:ethernetif_process_irq_do	24	static
+../LWIP/target/ethernetif.c:325:6:ethernetif_process_irq	24	static
+../LWIP/target/ethernetif.c:345:6:ethernet_irq_handler	16	static
+../LWIP/target/ethernetif.c:357:6:ethernetif_update_config	16	static
+../LWIP/target/ethernetif.c:372:13:ethernetif_notify_conn_changed	16	static

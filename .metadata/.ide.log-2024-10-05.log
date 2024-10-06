@@ -1,0 +1,91 @@
+2024-10-06 01:23:10,850 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-10-06 01:23:51,422 [INFO] Gpio:277 - dependency for GPIO [RCC, SPI1, SYS, USART2]
+2024-10-06 01:25:11,315 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 518259968 Bytes (880803840)
+2024-10-06 01:25:12,871 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 553385216 Bytes (880803840)
+2024-10-06 01:25:15,350 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 653526272 Bytes (880803840)
+2024-10-06 01:25:16,051 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SPI
+2024-10-06 01:25:16,051 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2024-10-06 01:25:16,051 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: FREERTOS
+2024-10-06 01:25:16,051 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: USART
+2024-10-06 01:25:16,052 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2024-10-06 01:25:16,052 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2024-10-06 01:25:16,052 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2024-10-06 01:25:16,054 [INFO] CodeGenerator:807 - code generatio: config db path: E:\STM32\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.12.1.202409122256\\db\
+2024-10-06 01:25:16,304 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\license.tmp_save
+2024-10-06 01:25:16,547 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\license.tmp
+2024-10-06 01:25:16,643 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\Core\Src\gpio.c_save
+2024-10-06 01:25:16,814 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\Core\Src\gpio.c
+2024-10-06 01:25:16,821 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\Core\Inc\gpio.h_save
+2024-10-06 01:25:16,961 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\Core\Inc\gpio.h
+2024-10-06 01:25:17,120 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-10-06 01:25:17,133 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_inc.tmp_save
+2024-10-06 01:25:17,381 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_inc.tmp
+2024-10-06 01:25:17,386 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_kernelInit.tmp_save
+2024-10-06 01:25:17,549 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_kernelInit.tmp
+2024-10-06 01:25:17,554 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_kernelStart.tmp_save
+2024-10-06 01:25:17,665 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_kernelStart.tmp
+2024-10-06 01:25:17,699 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_typedefs.tmp_save
+2024-10-06 01:25:17,853 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_typedefs.tmp
+2024-10-06 01:25:18,886 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_vars.tmp_save
+2024-10-06 01:25:19,021 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_vars.tmp
+2024-10-06 01:25:19,064 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_pfp.tmp_save
+2024-10-06 01:25:19,216 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_pfp.tmp
+2024-10-06 01:25:20,262 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_obj_creat.tmp_save
+2024-10-06 01:25:20,423 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_obj_creat.tmp
+2024-10-06 01:25:20,474 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_default_thread.tmp_save
+2024-10-06 01:25:20,611 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_default_thread.tmp
+2024-10-06 01:25:20,645 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_threads.tmp_save
+2024-10-06 01:25:20,767 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_threads.tmp
+2024-10-06 01:25:20,792 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2024-10-06 01:25:20,811 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_inc.tmp_save
+2024-10-06 01:25:20,994 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_inc.tmp
+2024-10-06 01:25:21,014 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_kernelInit.tmp_save
+2024-10-06 01:25:21,144 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_kernelInit.tmp
+2024-10-06 01:25:21,151 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_kernelStart.tmp_save
+2024-10-06 01:25:21,276 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_kernelStart.tmp
+2024-10-06 01:25:21,283 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_typedefs.tmp_save
+2024-10-06 01:25:21,396 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_typedefs.tmp
+2024-10-06 01:25:21,417 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_vars.tmp_save
+2024-10-06 01:25:21,550 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_vars.tmp
+2024-10-06 01:25:21,558 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_pfp.tmp_save
+2024-10-06 01:25:21,681 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_pfp.tmp
+2024-10-06 01:25:21,700 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_obj_creat.tmp_save
+2024-10-06 01:25:21,833 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_obj_creat.tmp
+2024-10-06 01:25:21,842 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_default_thread.tmp_save
+2024-10-06 01:25:21,945 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_default_thread.tmp
+2024-10-06 01:25:21,952 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\rtos_threads.tmp_save
+2024-10-06 01:25:22,072 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\rtos_threads.tmp
+2024-10-06 01:25:22,094 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\Core\Inc\FreeRTOSConfig.h_save
+2024-10-06 01:25:22,296 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\Core\Inc\FreeRTOSConfig.h
+2024-10-06 01:25:22,316 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\Core\Src\freertos.c_save
+2024-10-06 01:25:22,530 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\Core\Src\freertos.c
+2024-10-06 01:25:22,577 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\Core\Src\spi.c_save
+2024-10-06 01:25:22,824 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\Core\Src\spi.c
+2024-10-06 01:25:22,844 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\Core\Inc\spi.h_save
+2024-10-06 01:25:22,990 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\Core\Inc\spi.h
+2024-10-06 01:25:23,025 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\Core\Src\usart.c_save
+2024-10-06 01:25:23,245 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\Core\Src\usart.c
+2024-10-06 01:25:23,257 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\Core\Inc\usart.h_save
+2024-10-06 01:25:23,463 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\Core\Inc\usart.h
+2024-10-06 01:25:23,524 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\Core\Src\stm32f4xx_it.c_save
+2024-10-06 01:25:23,795 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\Core\Src\stm32f4xx_it.c
+2024-10-06 01:25:23,814 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\Core\Inc\stm32f4xx_it.h_save
+2024-10-06 01:25:23,995 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\Core\Inc\stm32f4xx_it.h
+2024-10-06 01:25:24,065 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\Core\Src\stm32f4xx_hal_msp.c_save
+2024-10-06 01:25:24,304 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\Core\Src\stm32f4xx_hal_msp.c
+2024-10-06 01:25:24,328 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\MXTmpFiles\system.tmp_save
+2024-10-06 01:25:24,457 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\MXTmpFiles\system.tmp
+2024-10-06 01:25:24,478 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\Core\Src\stm32f4xx_hal_timebase_tim.c_save
+2024-10-06 01:25:24,629 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\Core\Src\stm32f4xx_hal_timebase_tim.c
+2024-10-06 01:25:24,700 [INFO] CodeEngine:311 - oldGeneratedFile, E:\Ethernet\lwip_compile\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-10-06 01:25:24,895 [INFO] CodeEngine:335 - Generated code: E:\Ethernet\lwip_compile\Core\Inc\stm32f4xx_hal_conf.h
+2024-10-06 01:25:24,980 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\Core\Inc\main.h_save
+2024-10-06 01:25:25,229 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\Core\Inc\main.h
+2024-10-06 01:25:25,254 [INFO] CodeEngine:255 - oldGeneratedFile, E:\Ethernet\lwip_compile\Core\Src\main.c_save
+2024-10-06 01:25:25,459 [INFO] CodeEngine:279 - Generated code: E:\Ethernet\lwip_compile\Core\Src\main.c
+2024-10-06 01:25:27,528 [INFO] ProjectBuilder:3249 - Time for Copy HAL[1] : 1739mS.
+2024-10-06 01:25:27,534 [INFO] ProjectBuilder:4828 - Project Generator version: 4.5.0-B34
+2024-10-06 01:25:27,783 [INFO] ConfigFileManager:1531 - The Die is : DIE433
+2024-10-06 01:25:31,579 [INFO] ProjectBuilder:5097 - Time for Generating toolchain IDE Files: 4045mS.
+2024-10-06 01:25:31,580 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 1mS.
+2024-10-06 01:25:31,610 [INFO] ProjectBuilder:3107 - Time for Copy CMSIS : 0mS.

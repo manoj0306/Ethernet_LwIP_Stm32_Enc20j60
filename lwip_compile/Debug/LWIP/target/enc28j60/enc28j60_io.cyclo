@@ -1,0 +1,15 @@
+../LWIP/target/enc28j60/enc28j60_io.c:16:22:up_udelay	2
+../LWIP/target/enc28j60/enc28j60_io.c:24:13:_calibrate	3
+../LWIP/target/enc28j60/enc28j60_io.c:41:6:ENC28J60SPIInit	2
+../LWIP/target/enc28j60/enc28j60_io.c:82:6:ENC28J60GPIOInit	1
+../LWIP/target/enc28j60/enc28j60_io.c:104:6:ENC28J60INTInit	1
+../LWIP/target/enc28j60/enc28j60_io.c:119:6:ENC28J60EnableIRQ	1
+../LWIP/target/enc28j60/enc28j60_io.c:124:6:ENC28J60DisableIRQ	1
+../LWIP/target/enc28j60/enc28j60_io.c:129:6:EXTI2_IRQHandler	1
+../LWIP/target/enc28j60/enc28j60_io.c:134:6:HAL_GPIO_EXTI_Callback	2
+../LWIP/target/enc28j60/enc28j60_io.c:142:6:ENC28J60AssertCS	1
+../LWIP/target/enc28j60/enc28j60_io.c:147:6:ENC28J60ReleaseCS	1
+../LWIP/target/enc28j60/enc28j60_io.c:160:9:ENC_SPI_SendWithoutSelection	1
+../LWIP/target/enc28j60/enc28j60_io.c:172:9:ENC_SPI_Send	1
+../LWIP/target/enc28j60/enc28j60_io.c:195:6:ENC_SPI_SendBuf	4
+../LWIP/target/enc28j60/enc28j60_io.c:225:6:ENC_SPI_Select	2

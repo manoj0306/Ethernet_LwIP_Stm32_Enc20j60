@@ -1,0 +1,129 @@
+14:01:14 **** Incremental Build of configuration Debug for project lwip_compile ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../LWIP/target -I../LWIP/target/enc28j60 -I../Middlewares/Third_Party/lwip/system -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/lwip -I../Middlewares/Third_Party/lwip/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I"E:/Ethernet/lwip_compile/Middlewares/Third_Party/lwip/apps/http" -O0 -ffunction-sections -fdata-sections -Wall -fcommon -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Middlewares/Third_Party/lwip/include/lwip/arch.h:48,
+                 from ../Middlewares/Third_Party/lwip/include/lwip/debug.h:40,
+                 from ../Middlewares/Third_Party/lwip/include/lwip/opt.h:52,
+                 from ../Middlewares/Third_Party/lwip/include/lwip/netif.h:40,
+                 from ../Core/Src/main.c:29:
+../Middlewares/Third_Party/lwip/system/arch/cc.h:40: warning: "LWIP_PROVIDE_ERRNO" redefined
+   40 | #define LWIP_PROVIDE_ERRNO
+      | 
+In file included from ../Core/Src/main.c:28:
+../LWIP/target/lwipopts.h:130: note: this is the location of the previous definition
+  130 | #define LWIP_PROVIDE_ERRNO 1
+      | 
+../Middlewares/Third_Party/lwip/system/arch/cc.h:49: warning: "BYTE_ORDER" redefined
+   49 | #define BYTE_ORDER LITTLE_ENDIAN
+      | 
+In file included from E:\STM32\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/sys/types.h:49,
+                 from E:\STM32\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/sys/time.h:45,
+                 from ../Middlewares/Third_Party/lwip/system/arch/cc.h:45:
+E:\STM32\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/machine/endian.h:20: note: this is the location of the previous definition
+   20 | #define BYTE_ORDER      _BYTE_ORDER
+      | 
+arm-none-eabi-gcc -o "lwip_compile.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Ethernet\lwip_compile\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lwip_compile.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lwip_compile.elf
+ 
+arm-none-eabi-size  lwip_compile.elf 
+arm-none-eabi-objdump -h -S lwip_compile.elf  > "lwip_compile.list"
+   text	   data	    bss	    dec	    hex	filename
+ 100332	    124	  57028	 157484	  2672c	lwip_compile.elf
+Finished building: default.size.stdout
+ 
+Finished building: lwip_compile.list
+ 
+14:34:37 **** Incremental Build of configuration Debug for project lwip_compile ****
+make -j4 all 
+arm-none-eabi-size  lwip_compile.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 100332	    124	  57028	 157484	  2672c	lwip_compile.elf
+Finished building: default.size.stdout
+ 
+14:55:29 **** Incremental Build of configuration Debug for project lwip_compile ****
+make -j4 all 
+arm-none-eabi-gcc "../LWIP/target/enc28j60/enc28j60_io.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../LWIP/target -I../LWIP/target/enc28j60 -I../Middlewares/Third_Party/lwip/system -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/lwip -I../Middlewares/Third_Party/lwip/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I"E:/Ethernet/lwip_compile/Middlewares/Third_Party/lwip/apps/http" -O0 -ffunction-sections -fdata-sections -Wall -fcommon -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"LWIP/target/enc28j60/enc28j60_io.d" -MT"LWIP/target/enc28j60/enc28j60_io.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "LWIP/target/enc28j60/enc28j60_io.o"
+arm-none-eabi-gcc "../LWIP/target/ethernetif.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../LWIP/target -I../LWIP/target/enc28j60 -I../Middlewares/Third_Party/lwip/system -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/lwip -I../Middlewares/Third_Party/lwip/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I"E:/Ethernet/lwip_compile/Middlewares/Third_Party/lwip/apps/http" -O0 -ffunction-sections -fdata-sections -Wall -fcommon -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"LWIP/target/ethernetif.d" -MT"LWIP/target/ethernetif.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "LWIP/target/ethernetif.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../LWIP/target -I../LWIP/target/enc28j60 -I../Middlewares/Third_Party/lwip/system -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/lwip -I../Middlewares/Third_Party/lwip/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I"E:/Ethernet/lwip_compile/Middlewares/Third_Party/lwip/apps/http" -O0 -ffunction-sections -fdata-sections -Wall -fcommon -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Middlewares/Third_Party/lwip/include/lwip/arch.h:48,
+                 from ../Middlewares/Third_Party/lwip/include/lwip/debug.h:40,
+                 from ../Middlewares/Third_Party/lwip/include/lwip/opt.h:52,
+                 from ../LWIP/target/ethernetif.c:30:
+../Middlewares/Third_Party/lwip/system/arch/cc.h:40: warning: "LWIP_PROVIDE_ERRNO" redefined
+   40 | #define LWIP_PROVIDE_ERRNO
+      | 
+In file included from ../Middlewares/Third_Party/lwip/include/lwip/opt.h:51:
+../LWIP/target/lwipopts.h:130: note: this is the location of the previous definition
+  130 | #define LWIP_PROVIDE_ERRNO 1
+      | 
+In file included from ../Middlewares/Third_Party/lwip/include/lwip/arch.h:48,
+                 from ../Middlewares/Third_Party/lwip/include/lwip/debug.h:40,
+                 from ../Middlewares/Third_Party/lwip/include/lwip/opt.h:52,
+                 from ../Middlewares/Third_Party/lwip/include/lwip/err.h:39,
+                 from ../LWIP/target/ethernetif.h:5,
+                 from ../LWIP/target/enc28j60/enc28j60_io.c:4:
+../Middlewares/Third_Party/lwip/system/arch/cc.h:40: warning: "LWIP_PROVIDE_ERRNO" redefined
+   40 | #define LWIP_PROVIDE_ERRNO
+      | 
+In file included from ../Middlewares/Third_Party/lwip/include/lwip/opt.h:51:
+../LWIP/target/lwipopts.h:130: note: this is the location of the previous definition
+  130 | #define LWIP_PROVIDE_ERRNO 1
+      | 
+In file included from ../Middlewares/Third_Party/lwip/include/lwip/arch.h:48,
+                 from ../Middlewares/Third_Party/lwip/include/lwip/debug.h:40,
+                 from ../Middlewares/Third_Party/lwip/include/lwip/opt.h:52,
+                 from ../Middlewares/Third_Party/lwip/include/lwip/netif.h:40,
+                 from ../Core/Src/main.c:29:
+../Middlewares/Third_Party/lwip/system/arch/cc.h:40: warning: "LWIP_PROVIDE_ERRNO" redefined
+   40 | #define LWIP_PROVIDE_ERRNO
+      | 
+In file included from ../Core/Src/main.c:28:
+../LWIP/target/lwipopts.h:130: note: this is the location of the previous definition
+  130 | #define LWIP_PROVIDE_ERRNO 1
+      | 
+../Middlewares/Third_Party/lwip/system/arch/cc.h:49: warning: "BYTE_ORDER" redefined
+   49 | #define BYTE_ORDER LITTLE_ENDIAN
+      | 
+In file included from E:\STM32\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/sys/types.h:49,
+                 from E:\STM32\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/sys/time.h:45,
+                 from ../Middlewares/Third_Party/lwip/system/arch/cc.h:45:
+E:\STM32\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/machine/endian.h:20: note: this is the location of the previous definition
+   20 | #define BYTE_ORDER      _BYTE_ORDER
+      | 
+../Middlewares/Third_Party/lwip/system/arch/cc.h:49: warning: "BYTE_ORDER" redefined
+   49 | #define BYTE_ORDER LITTLE_ENDIAN
+      | 
+In file included from E:\STM32\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/sys/types.h:49,
+                 from E:\STM32\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/sys/time.h:45,
+                 from ../Middlewares/Third_Party/lwip/system/arch/cc.h:45:
+E:\STM32\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/machine/endian.h:20: note: this is the location of the previous definition
+   20 | #define BYTE_ORDER      _BYTE_ORDER
+      | 
+../Middlewares/Third_Party/lwip/system/arch/cc.h:49: warning: "BYTE_ORDER" redefined
+   49 | #define BYTE_ORDER LITTLE_ENDIAN
+      | 
+In file included from E:\STM32\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/sys/types.h:49,
+                 from E:\STM32\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/sys/time.h:45,
+                 from ../Middlewares/Third_Party/lwip/system/arch/cc.h:45:
+E:\STM32\STM32CubeIDE_1.16.1\STM32CubeIDE\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.200.202406191623\tools\bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/include/machine/endian.h:20: note: this is the location of the previous definition
+   20 | #define BYTE_ORDER      _BYTE_ORDER
+      | 
+In file included from ../LWIP/target/ethernetif.c:35:
+../LWIP/target/enc28j60/enc28j60.h:771:15: warning: inline function 'up_udelay' declared but never defined
+  771 | __inline void up_udelay(uint32_t us);
+      |               ^~~~~~~~~
+../LWIP/target/enc28j60/enc28j60_io.c: In function 'ENC28J60SPIInit':
+../LWIP/target/enc28j60/enc28j60_io.c:71:17: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+   71 |                 Error_Handler();
+      |                 ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "lwip_compile.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Ethernet\lwip_compile\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lwip_compile.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: lwip_compile.elf
+ 
+arm-none-eabi-size  lwip_compile.elf 
+arm-none-eabi-objdump -h -S lwip_compile.elf  > "lwip_compile.list"
+   text	   data	    bss	    dec	    hex	filename
+ 100332	    124	  57028	 157484	  2672c	lwip_compile.elf
+Finished building: default.size.stdout
+ 
+Finished building: lwip_compile.list
+ 
