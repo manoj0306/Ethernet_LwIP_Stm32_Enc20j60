@@ -195,10 +195,77 @@ int putchar(int ch)
 
 void StartDefaultTask(void *argument)
 {
+	int i= 1;
 	 osDelay(500);
 	 tcpip_init(NULL,NULL);
 
 	 Netif_Config();
+
+	    //Simple TCP Client!
+	    //IP address of the remote server
+	    ip_addr_t server_ip;
+
+	    //This holds the return values from network functions
+	    //mainly used to check error or success
+	    err_t status;
+
+	    //This struct represent a network connection
+	    struct netconn *conn;
+
+	    //Allocate resources for a new connection
+	    //Parameter tells what type of connection we need
+	    //Other option is for NETCONN_UDP
+	    conn=netconn_new(NETCONN_TCP);
+
+
+	    IP4_ADDR(&server_ip,192,168,224,101);//My PC's local IP address is 192.168.2.17
+
+	    printf("Connecting to server ... \r\n ");
+	    status=netconn_connect(conn, &server_ip, 5000);
+
+	        if(status==ERR_OK)
+	        {
+	            printf("Connected to server! \r\n ");
+	        }
+	        else
+	        {
+	            printf("Sorry ! Could not connect to server.\r\n ");
+
+	            while(1);
+	        }
+
+	        //Send a Hello Message 5 time, waiting 1 second
+	        while(i)
+	        {
+	            printf("Sending data to server \r\n ");
+
+	            status=netconn_write(conn,"HELLO FROM STM32\r\n",18,NETCONN_NOCOPY);
+
+	            if(status!=ERR_OK)
+	            {
+	                //Sending failed
+	                printf("Sending failed! \r\n ");
+
+	                netconn_delete(conn);
+
+	                i = 0;
+
+	                while(1);
+	            }
+	            else if(status==ERR_OK)
+	            {
+	                printf("Data sent successfully ! \r\n ");
+	            }
+
+	            osDelay(1000);
+
+	        }//end for loop, 5 times looping done
+
+	        //Clean up resources
+	        netconn_close(conn);
+	        netconn_delete(conn);
+
+
 	 while(1);
 //    int16_t temperature=32;
 //    int16_t humidity=53;
@@ -219,7 +286,7 @@ static void Netif_Config(void)
 
   /* IP address setting */
 
-  IP4_ADDR(&ipaddr, IP_ADDR_4, IP_ADDR_3, IP_ADDR_2, IP_ADDR_1);
+  IP4_ADDR(&ipaddr, IP_ADDR_4, IP_ADDR_3, IP_ADDR_2, IP_ADDR_1); //192.168.1.3 Host
   IP4_ADDR(&netmask, 255, 255 , 255, 0);
   IP4_ADDR(&gw, IP_ADDR_4, IP_ADDR_3, IP_ADDR_2, 102);
 

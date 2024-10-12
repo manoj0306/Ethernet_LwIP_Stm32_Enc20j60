@@ -17,8 +17,8 @@
 //SELF IP ADDRESS
 #define IP_ADDR_4 192
 #define IP_ADDR_3 168
-#define IP_ADDR_2 1
-#define IP_ADDR_1 3
+#define IP_ADDR_2 224
+#define IP_ADDR_1 100
 
 /* Exported types ------------------------------------------------------------*/
 /* Structure that include link thread parameters */

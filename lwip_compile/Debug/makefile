@@ -84,8 +84,8 @@ all: main-build
 main-build: lwip_compile.elf secondary-outputs
 
 # Tool invocations
-lwip_compile.elf lwip_compile.map: $(OBJS) $(USER_OBJS) E:\Ethernet\lwip_compile\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "lwip_compile.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\Ethernet\lwip_compile\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lwip_compile.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+lwip_compile.elf lwip_compile.map: $(OBJS) $(USER_OBJS) E:\Ethernet\git\ commite\Ethernet_LwIP_Stm32_Enc20j60\lwip_compile\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "lwip_compile.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\Ethernet\git commite\Ethernet_LwIP_Stm32_Enc20j60\lwip_compile\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="lwip_compile.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
