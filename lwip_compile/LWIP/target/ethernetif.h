@@ -15,10 +15,10 @@
 #define ENC_MAC_1 0x12
 
 //SELF IP ADDRESS
-#define IP_ADDR_4 192
-#define IP_ADDR_3 168
-#define IP_ADDR_2 224
-#define IP_ADDR_1 100
+#define IP_ADDR_4 169
+#define IP_ADDR_3 254
+#define IP_ADDR_2 129
+#define IP_ADDR_1 101
 
 /* Exported types ------------------------------------------------------------*/
 /* Structure that include link thread parameters */

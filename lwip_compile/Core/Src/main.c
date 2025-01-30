@@ -218,7 +218,7 @@ void StartDefaultTask(void *argument)
 	    conn=netconn_new(NETCONN_TCP);
 
 
-	    IP4_ADDR(&server_ip,192,168,224,101);//My PC's local IP address is 192.168.2.17
+	    IP4_ADDR(&server_ip,169,254,129,102);//My PC's local IP address is 169.254.129.102
 
 	    printf("Connecting to server ... \r\n ");
 	    status=netconn_connect(conn, &server_ip, 5000);
@@ -286,7 +286,7 @@ static void Netif_Config(void)
 
   /* IP address setting */
 
-  IP4_ADDR(&ipaddr, IP_ADDR_4, IP_ADDR_3, IP_ADDR_2, IP_ADDR_1); //192.168.1.3 Host
+  IP4_ADDR(&ipaddr, IP_ADDR_4, IP_ADDR_3, IP_ADDR_2, IP_ADDR_1); //169.254.129.101 Host
   IP4_ADDR(&netmask, 255, 255 , 255, 0);
   IP4_ADDR(&gw, IP_ADDR_4, IP_ADDR_3, IP_ADDR_2, 102);
 
