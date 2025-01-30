@@ -1,3 +1,7 @@
+# date: 30_01_2025
+
+- Added gitignore file
+
 # Ethernet_LwIP_Stm32_Enc20j60
 
 - Added tcpip application
