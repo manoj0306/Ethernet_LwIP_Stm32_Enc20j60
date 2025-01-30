@@ -6,3 +6,14 @@
 
 - Added tcpip application
 - added stm32 as client and PC as a host with wifi network
+
+
+
+
+
+
+
+created new branch git commands:
+git checkout -b new-feature
+git push -u origin feature/TCP/IP_stm32_client
+git commit -m "Add a descriptive message here"
